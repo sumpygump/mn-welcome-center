@@ -104,7 +104,6 @@ html,body {
 .hdg_2 { font-size: 24px; }
 
 .contain {
-    width: 1300px;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 1px 0px 13px -1px rgba(0,0,0,0.30);
@@ -113,7 +112,6 @@ html,body {
 }
 
 .banner {
-    display: flex;
     padding: 20px;
     justify-content: space-between;
     box-sizing: border-box;
@@ -122,7 +120,9 @@ html,body {
 
 .banner-hdg {
     font-weight: bold;
-	font-size: 20px;
+	font-size: 26px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .nav {
@@ -142,17 +142,17 @@ html,body {
 }
 
 .hero {
-    height: 500px;
+    height: 302px;
 	position: relative;
     background-color: #333333;
     background-image: url("/img/hero.jpg");
-    background-position: 0 -91px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .hero-hdg {
-	padding-top: 240px;
+	padding-top: 140px;
 	text-align: center;
 	color: #ffffff;
 	font-weight: bold;
@@ -203,22 +203,22 @@ html,body {
 
 .text-img-combo {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	padding-bottom: 50px;
+	padding-bottom: 0;
 	margin: 0 auto;
-	width: 80%;
 }
 
 .tic-text {
-	padding: 50px 0;
+	padding: 50px 30px 0 30px;
 	text-align: center;
-	font-size: 24px;
-	width: 50%;
+	font-size: 16px;
+	width: 100%;
+    box-sizing: border-box;
 }
 
 .tic-img {
-	width: 400px;
 	padding-top: 50px;
 }
 
@@ -228,6 +228,7 @@ html,body {
 
 .panel {
 	display: flex;
+    flex-direction: column;
 	justify-content: space-between;
 	padding-bottom: 50px;
 }
@@ -235,14 +236,17 @@ html,body {
 .panel-item {
 	max-width: 500px;
 	display: flex;
+    flex-direction: column;
 	flex: 1;
 	background-color: #ffffff;
 	padding: 30px;
+    margin: 0 auto 20px auto;
 }
 
 .panel-item_wide {
 	max-width: initial;
 	flex-direction: column;
+    margin: 0;
 }
 
 .panel-item_lg {
@@ -251,16 +255,17 @@ html,body {
 .panel-images {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 30px;
+	padding-bottom: 0;
 }
 
 .panel-img {
-	width: 250px;
+	width: 100%;
 	flex-shrink: 0;
 }
 
 .panel-images .panel-img {
 	width: 180px;
+    flex-shrink: 1;
 }
 
 .panel-img img {
@@ -268,13 +273,14 @@ html,body {
 }
 
 .panel-details {
-	padding: 0 20px;
+	padding: 0;
 }
 
 .panel-details .hd {
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 20px;
+    padding-top: 20px;
 }
 
 .desc {
@@ -292,7 +298,7 @@ html,body {
 }
 
 .section .hdg_l {
-	text-align: left;
+	text-align: center;
 	padding-bottom: 25px;
 }
 
@@ -397,8 +403,84 @@ html,body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 840px) {
   /* Style adjustments for viewports that meet the condition */
+    .contain {
+        width: 1300px;
+    }
+
+    .banner {
+        display: flex;
+    }
+
+    .banner-hdg {
+        text-align: left;
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+
+    .text-img-combo {
+	    flex-direction: row;
+	    width: 80%;
+	    padding-bottom: 50px;
+    }
+
+    .panel {
+        flex-direction: row;
+    }
+
+    .panel-item {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .panel-item_wide {
+        flex-direction: column;
+    }
+
+    .panel-images {
+	    display: flex;
+	    padding-bottom: 30px;
+    }
+
+    .panel-img {
+        width: 250px;
+    }
+
+    .panel-images .panel-img {
+        flex-shrink: 0;
+    }
+
+    .panel-details {
+        padding: 0 20px;
+    }
+
+    .panel-details .hd {
+        padding-top: 0;
+    }
+
+    .tic-text {
+	    padding: 50px 0;
+	    font-size: 24px;
+	    width: 50%;
+    }
+
+    .tic-img {
+	    width: 400px;
+    }
+
+    .hero {
+        height: 500px;
+        background-position: 0 -91px;
+    }
+
+    .hero-hdg {
+	    padding-top: 240px;
+    }
+
+    .section .hdg_l {
+	    text-align: left;
+    }
 }
 
 @media print,
