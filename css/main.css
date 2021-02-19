@@ -95,6 +95,10 @@ html,body {
     margin: 0;
 }
 
+a {
+    color: #237bff;
+}
+
 .text_c { text-align: center; }
 .vr { padding-bottom: 50px; }
 
@@ -126,6 +130,19 @@ html,body {
 	font-size: 26px;
     text-align: center;
     padding-bottom: 20px;
+}
+
+.cta a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    border: 1px solid #dadada;
+    padding: 8px 24px;
+    border-radius: 10px;
+}
+
+.cta a:hover {
+    text-decoration: underline;
 }
 
 .nav {
