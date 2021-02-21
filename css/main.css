@@ -172,12 +172,25 @@ a {
 }
 
 .hero-hdg {
-	padding-top: 174px;
+	padding-top: 148px;
 	text-align: center;
 	color: #ffffff;
 	font-weight: bold;
 	z-index: 2;
 	font-size: 44px;
+}
+
+.hero-subtitle {
+    text-align: center;
+    color: #ffffff;
+    font-size: 32px;
+    font-variant-caps: small-caps;
+}
+
+.hero-hr {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .hero-text {
@@ -332,6 +345,14 @@ a {
 	text-decoration: none;
 }
 
+.schedule tr td {
+}
+
+.date {
+    padding-right: 8px;
+    font-weight: bold;
+}
+
 .section .hdg_l {
 	text-align: center;
 	padding-bottom: 25px;
@@ -454,6 +475,10 @@ a {
         padding-bottom: 0;
     }
 
+    .overlay-text {
+        width: 378px;
+    }
+
     .text-img-combo {
 	    flex-direction: row;
 	    width: 80%;
@@ -519,7 +544,12 @@ a {
     }
 
     .hero-hdg {
-	    padding-top: 150px;
+        font-size: 64px;
+	    padding-top: 260px;
+    }
+
+    .schedule {
+        margin-left: 32px;
     }
 
     .section .hdg_l {
