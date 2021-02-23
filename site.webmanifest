@@ -1,10 +1,10 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "MN Welcome",
+  "name": "Minnesota Welcome Center",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
-    "sizes": "192x192"
+    "sizes": "128x128"
   }],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#fafafa",
