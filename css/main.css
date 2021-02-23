@@ -172,7 +172,7 @@ a {
 }
 
 .hero-hdg {
-	padding-top: 148px;
+	padding-top: 187px;
 	text-align: center;
 	color: #ffffff;
 	font-weight: bold;
@@ -254,6 +254,10 @@ a {
 	font-size: 16px;
 	width: 100%;
     box-sizing: border-box;
+}
+
+.tic-hd {
+    font-size: 30px;
 }
 
 .tic-text-sm {
@@ -475,10 +479,6 @@ a {
         padding-bottom: 0;
     }
 
-    .overlay-text {
-        width: 378px;
-    }
-
     .text-img-combo {
 	    flex-direction: row;
 	    width: 80%;
@@ -545,7 +545,7 @@ a {
 
     .hero-hdg {
         font-size: 64px;
-	    padding-top: 260px;
+	    padding-top: 150px;
     }
 
     .schedule {
