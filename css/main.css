@@ -369,6 +369,7 @@ a {
   height: 300px;
 }
 
+.video-player iframe,
 .video-player video {
   position: absolute;
   top: 0;
