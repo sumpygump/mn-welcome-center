@@ -40,7 +40,6 @@ html {
 /*
  * A better looking default horizontal rule
  */
-
 hr {
   display: block;
   height: 1px;
@@ -102,6 +101,20 @@ a {
 .text_c { text-align: center; }
 .vr { padding-bottom: 50px; }
 
+/*doc
+---
+name: headings
+category: content
+---
+
+The headings on the site use the font *Domine* from Google Fonts
+
+```html_example
+<h1 class="hdg hdg_1">Heading 1</h1>
+<h2 class="hdg hdg_2">Heading 2</h2>
+<h3 class="hdg hdg_3">Heading 3</h3>
+```
+*/
 .hdg {
   font-weight: bold;
   font-family: 'Domine', serif;
@@ -110,6 +123,18 @@ a {
 .hdg_2 { font-size: 32px; }
 .hdg_2 { font-size: 24px; }
 
+/*doc
+---
+name: container
+category: layout
+---
+
+The main container is `.contain` and it includes drop shadow.
+
+```html_example
+<div class="contain">I am contained.</div>
+```
+*/
 .contain {
   margin: 0 auto;
   background-color: #fff;
@@ -118,6 +143,39 @@ a {
   -moz-box-shadow: 1px 0px 13px -1px rgba(0,0,0,0.30);
 }
 
+/*doc
+---
+name: banner
+category: layout
+---
+The banner provides a flexible area to include components like `.banner-hdg`,
+`.cta`, and `.nav`.
+
+```html_example
+<div class="banner">
+  <div class="banner-hdg">Minnesota Welcome Center</div>
+  <div class="cta"><a href="#">Haga clic aquí para ver esta página en español</a></div>
+  <div class="nav">
+      <a href="#about">About</a>
+      <a href="#classes">Classes</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+  </div>
+</div>
+```
+
+```html_example
+<div class="banner">
+  <div class="banner-hdg">Minnesota Welcome Center</div>
+  <div class="nav">
+      <a href="#about">About</a>
+      <a href="#classes">Classes</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+  </div>
+</div>
+```
+*/
 .banner {
   padding: 20px;
   justify-content: space-between;
@@ -161,6 +219,22 @@ a {
   text-decoration: underline;
 }
 
+/*doc
+---
+name: hero
+category: content
+---
+
+```html_example
+<div class="hero">
+    <span class="overlay"></span>
+    <div class="overlay-text">
+        <div class="hdg hero-hdg">Welcome</div>
+        <p class="hero-text">Offering hope, resources, and empowerment.</p>
+    </div>
+</div>
+```
+*/
 .hero {
   height: 302px;
   position: relative;
