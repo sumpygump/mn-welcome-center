@@ -177,7 +177,7 @@ The banner provides a flexible area to include components like `.banner-hdg`,
 ```
 */
 .banner {
-  padding: 20px;
+  padding: 0;
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
@@ -188,6 +188,20 @@ The banner provides a flexible area to include components like `.banner-hdg`,
   font-size: 26px;
   text-align: center;
   padding-bottom: 20px;
+  width: 100%;
+}
+
+.banner-hdg img {
+  width: 100%;
+}
+
+.cta {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.nav {
+  padding: 20px;
 }
 
 .cta a {
@@ -313,6 +327,31 @@ category: content
   margin: 0;
 }
 
+.announce {
+  background-color: #ffeb7d;
+  color: #333333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.announce-img {
+  width: 100%;
+}
+
+.announce-img img {
+  width: 100%;
+}
+
+.announce-text {
+  font-size: 22px;
+  text-align: center;
+}
+
+.text_b {
+  font-weight: bold;
+}
+
 .text-img-combo {
   display: flex;
   flex-direction: column;
@@ -344,6 +383,10 @@ category: content
   flex-shrink: 0;
 }
 
+.tic-img_ns {
+  padding-top: 0;
+}
+
 .tic-img img {
   width: 100%;
 }
@@ -362,7 +405,7 @@ category: content
   flex: 1;
   background-color: #ffffff;
   padding: 30px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
 }
 
 .panel-item_wide {
@@ -378,6 +421,10 @@ category: content
   display: flex;
   justify-content: space-between;
   padding-bottom: 0;
+}
+
+.panel-images_close {
+  justify-content: space-evenly;
 }
 
 .panel-img {
@@ -567,10 +614,33 @@ Helper classes
     text-align: left;
     font-size: 20px;
     padding-bottom: 0;
+    width: 350px;
+  }
+
+  .cta {
+    padding: 0;
+  }
+
+  .nav {
+    padding: 0 20px 0 0 ;
+  }
+
+  .announce {
+    flex-direction: row;
+  }
+
+  .announce-img {
+    width: 600px;
+  }
+
+  .announce-text {
+    padding-left: 20px;
+    text-align: left;
   }
 
   .text-img-combo {
     flex-direction: row;
+    align-items: flex-start;
     width: 80%;
     padding-bottom: 50px;
   }
@@ -626,6 +696,10 @@ Helper classes
 
   .panel-item_lg .panel-img {
     width: 400px;
+  }
+
+  .panel-item_lg .panel-img_sm {
+    width: 300px;
   }
 
   .hero {
