@@ -99,6 +99,9 @@ a {
 }
 
 .text_c { text-align: center; }
+.text_b { font-weight: bold; }
+.text_sm { font-size: 14px; }
+
 .vr { padding-bottom: 50px; }
 
 /*doc
@@ -346,10 +349,6 @@ category: content
 .announce-text {
   font-size: 22px;
   text-align: center;
-}
-
-.text_b {
-  font-weight: bold;
 }
 
 .text-img-combo {
